@@ -45,22 +45,22 @@ export function Projects() {
               delay={i * 70}
               className="panel group flex flex-col overflow-hidden transition-all hover:-translate-y-1.5 hover:border-brand/50"
             >
-              {/* EDIT: swap this placeholder for a real screenshot of the site */}
               <div
                 className={cn(
-                  "relative flex aspect-[16/10] items-center justify-center border-b border-border bg-gradient-to-br",
+                  "relative flex aspect-[16/10] items-center justify-center overflow-hidden border-b border-border bg-gradient-to-br",
                   p.accent,
                 )}
               >
-                <span className="font-display text-4xl font-bold opacity-40">
-                  {p.name
-                    .split(" ")
-                    .map((w) => w[0])
-                    .join("")
-                    .slice(0, 3)}
-                </span>
-                <span className="absolute bottom-2 left-3 font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
-                  screenshot placeholder
+                {p.image ? (
+                  <img
+                    src={p.image}
+                    alt={`${p.name} project screenshot`}
+                    className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : null}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-background/10 to-transparent" />
+                <span className="relative mt-auto mb-3 px-3 font-display text-2xl font-bold text-foreground drop-shadow-lg">
+                  {p.name}
                 </span>
               </div>
 

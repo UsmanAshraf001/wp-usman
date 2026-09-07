@@ -1,12 +1,16 @@
+
+import firstProjectImage from "@/assets/first.jpg";
+import usmans from "@/assets/usman-headshot.jpg";
+
 export const CONTACT = {
   name: "Muhammad Usman",
   role: "WordPress Developer",
-  email: "hello@example.com", // EDIT: your real email
-  phone: "+92 300 0000000", // EDIT: WhatsApp / phone
+  email: "usmanmuhammadashraf@gmail.com", // EDIT: your real email
+  phone: "+92 304 8162410", // EDIT: WhatsApp / phone
   location: "Pakistan — working with clients worldwide",
   fiverr: "https://www.fiverr.com/", // EDIT: your Fiverr profile URL
-  linkedin: "https://www.linkedin.com/", // EDIT
-  github: "https://github.com/", // EDIT
+  linkedin: "https://www.linkedin.com/in/usmanashraf001/", // EDIT
+  github: "https://github.com/UsmanAshraf001", // EDIT
   upwork: "https://www.upwork.com/", // EDIT
   resume: "/resume.pdf", // EDIT: drop your CV at public/resume.pdf
   calendly: "https://calendly.com/", // EDIT: consultation booking link
@@ -30,7 +34,7 @@ export const TAGLINES = [
 ];
 
 export const STATS = [
-  { value: "2+", label: "Years Experience" },
+  { value: "3+", label: "Years Experience" },
   { value: "100+", label: "Websites Delivered" },
   { value: "40+", label: "Foreign Clients Served" },
   { value: "5.0", label: "Average Client Rating" },
@@ -99,6 +103,7 @@ export const SKILL_GROUPS: SkillGroup[] = [
 ];
 
 export type Project = {
+  image?: string;
   name: string;
   url: string;
   description: string;
@@ -115,9 +120,9 @@ export const PROJECT_FILTERS = [
   { key: "international", label: "International Clients" },
 ];
 
-// EDIT: swap `screenshot` placeholders for real screenshots in src/assets.
 export const PROJECTS: Project[] = [
   {
+    image: firstProjectImage,
     name: "Dependable IT Services",
     url: "http://dependableitservices.com/",
     description: "IT support & managed services company website.",
@@ -126,6 +131,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand/30 to-brand-2/20",
   },
   {
+    image: usmans,
     name: "Nurse First Aesthetics",
     url: "https://nursefirst-aesthetics.co.uk/",
     description: "Healthcare & aesthetics clinic site with treatment booking.",
@@ -134,6 +140,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand-2/30 to-brand/20",
   },
   {
+    image: firstProjectImage,
     name: "Aesthetics Business Coach",
     url: "https://aestheticsbusinesscoach-ydy.co.uk/",
     description: "Coaching brand site with course & lead funnels.",
@@ -142,6 +149,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand/25 to-brand-2/25",
   },
   {
+    image: firstProjectImage,
     name: "Klinikk",
     url: "https://klinikk.co.uk/",
     description: "Medical clinic website with service directory.",
@@ -150,6 +158,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand-2/25 to-brand/25",
   },
   {
+    image: firstProjectImage,
     name: "Bresco Properties",
     url: "https://brescoproperties.com/",
     description: "Property management & real estate listings site.",
@@ -158,6 +167,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand/30 to-brand-2/10",
   },
   {
+    image: firstProjectImage,
     name: "MM Advisors",
     url: "https://mmadvisors.ie/",
     description: "Financial advisory firm site built for trust and clarity.",
@@ -166,6 +176,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand-2/30 to-brand/15",
   },
   {
+    image: firstProjectImage,
     name: "AVDC Help",
     url: "https://avdchelp.com/",
     description: "Support & help-desk platform for a service business.",
@@ -174,6 +185,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand/20 to-brand-2/30",
   },
   {
+    image: firstProjectImage,
     name: "WP Demo Site",
     url: "https://e241m8w8mr.wpdns.site/",
     description: "Staging/demo build used for client prototyping.",
@@ -182,6 +194,7 @@ export const PROJECTS: Project[] = [
     accent: "from-brand-2/20 to-brand/30",
   },
   {
+    image: firstProjectImage,
     name: "NCQC",
     url: "https://ncqc.pk/",
     description: "Certification & quality-council institutional website.",
@@ -195,7 +208,7 @@ export const EXPERIENCE = [
   {
     role: "Freelance WordPress Developer",
     org: "Fiverr & Direct Clients",
-    period: "2025 — Present",
+    period: "2023 — Present",
     points: [
       "Maintained a 5-star rating across a growing international client base.",
       "Deliver full builds end-to-end: discovery, design handoff, development, launch.",
